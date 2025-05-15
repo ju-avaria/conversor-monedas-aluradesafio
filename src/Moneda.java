@@ -12,8 +12,9 @@ public class Moneda {
 
     public void convertirMonedas(double cantidadAConvertir, Moneda moneda){
         this.resultadoConversion = cantidadAConvertir * moneda.tasaConversion;
-        System.out.println(cantidadAConvertir + moneda.monedaBase);
-        System.out.println("Convirtiendo a ... " + moneda.monedaAConvertir);
-        System.out.println("Resultado: " + resultadoConversion + moneda.monedaAConvertir);
+        System.out.println(cantidadAConvertir + " " + moneda.monedaBase);
+        System.out.println("Convirtiendo a ->> " + moneda.monedaAConvertir);
+        System.out.println("Resultado: " + (Math.round(resultadoConversion * 100.0) / 100.0) +
+                " " + moneda.monedaAConvertir);
     }
 }

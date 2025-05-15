@@ -9,7 +9,7 @@ import java.net.http.HttpResponse;
 public class ConsultaAPI {
     public MonedaAPI datosDivisaBase(String monedaBase){
         // Creando la url
-        String contrasenha = "6ee0fb3cf10236c4cee09d3b";
+        String contrasenha = "API-KEY";
         URI direccion = URI.create("https://v6.exchangerate-api.com/v6/"+contrasenha+"/latest/"+monedaBase);
         // Creando Gson para convertir json a clase moneda
         Gson gson = new GsonBuilder()
